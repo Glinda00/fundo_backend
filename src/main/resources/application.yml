@@ -1,0 +1,11 @@
+# 数据库连接配置，test本地库名称
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  resources:
+    static-locations: classpath:/templates  #访问静态页面
